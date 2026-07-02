@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp" android:height="180dp"
+    android:viewportWidth="320" android:viewportHeight="180">
+    <!-- 黑底 -->
+    <path android:fillColor="#000000" android:pathData="M0,0h320v180h-320z"/>
+    <!-- 像素坦克(黄色玩家坦克,朝上) -->
+    <path android:fillColor="#8a7500" android:pathData="M116,60h12v60h-12z M192,60h12v60h-12z"/>
+    <path android:fillColor="#e0c000" android:pathData="M132,70h56v46h-56z"/>
+    <path android:fillColor="#a08800" android:pathData="M140,78h40v30h-40z"/>
+    <path android:fillColor="#e0c000" android:pathData="M154,40h12v40h-12z"/>
+    <!-- 标题色块 -->
+    <path android:fillColor="#b53121" android:pathData="M40,140h240v24h-240z"/>
+    <path android:fillColor="#ffffff" android:pathData="M48,146h224v12h-224z"/>
+    <path android:fillColor="#b53121" android:pathData="M56,149h208v6h-208z"/>
+</vector>
