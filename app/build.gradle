@@ -1,28 +1,22 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
-    namespace 'com.jjj.battlecity'
+    namespace 'com.lextv.app'
     compileSdk 34
-
     defaultConfig {
-        applicationId "com.jjj.battlecity"
+        applicationId "com.lextv.app"
         minSdk 21
         targetSdk 34
         versionCode 1
         versionName "1.0"
     }
-
     buildTypes {
-        release {
-            minifyEnabled false
-            // 用 debug 签名,方便直接侧载安装
-            signingConfig signingConfigs.debug
-        }
+        release { minifyEnabled false }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+    kotlinOptions { jvmTarget = '17' }
 }
